@@ -15,4 +15,6 @@ loop:   sb $t3, cadena($t0)
         daddi $t3, $t3, 1
         daddi $t2, $t2, 1
         bne $t3, $t5, loop
+        daddi $t0, $t0, 1
+        sb $zero, cadena($t0)
         halt
